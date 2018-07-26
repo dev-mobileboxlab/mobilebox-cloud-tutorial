@@ -3,8 +3,8 @@
 		<parameter name="appURL" value="http://mobileboxlab.com/wp-content/uploads/apps/clock-release.apk"></parameter>
 		<test name="Test Home Screen">
 			<classes>
-				<parameter name="device" value="420079c6acc61400"></parameter>
-				<parameter name="version" value="5.1.1"></parameter>
+				<parameter name="device" value="HT68RBN00481"></parameter>
+				<parameter name="version" value="8.0.0"></parameter>
 				<class name="com.mobilebox.appium.test.AppTests"></class>
 			</classes>
 		</test>

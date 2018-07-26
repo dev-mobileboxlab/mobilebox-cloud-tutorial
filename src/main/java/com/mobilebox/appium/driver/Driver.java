@@ -14,7 +14,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 public class Driver {
 
-  private final String MB_HUB = "http://127.0.0.1:4723/wd/hub/";
+  private final String MB_HUB = "https://babbagecloud.com/wd/hub";
   private final int TIMEOUT = 20;
 
   /**
@@ -38,7 +38,7 @@ public class Driver {
     capabilities.setCapability(MobileCapabilityType.APP, path);
     capabilities.setCapability("appActivity", "com.simplemobiletools.clock.activities.SplashActivity");
     capabilities.setCapability("appPackage", "com.simplemobiletools.clock");
-    capabilities.setCapability("mobileboxToken", "38dc242cc11b4bd78def222ed8ff8942bc81e5a4bf634f1cb32ef6a38911c021");
+    capabilities.setCapability("mobileboxToken", "token");
 
     AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(hub, capabilities);
     driver.manage().timeouts().implicitlyWait(TIMEOUT, SECONDS);

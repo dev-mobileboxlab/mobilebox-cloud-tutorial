@@ -6,7 +6,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>mobilebox-appium</name>
 	<description>This is a simple example of an Appium + Maven + TestNG project in Mobilebox Cloud. Mobilebox offers access to a very large and diverse set of Android and iOS devices.</description>
-
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
 	<dependencies>
 
 		<dependency>
@@ -18,7 +21,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>5.0.0-BETA5</version>
+			<version>6.1.0</version>
 		</dependency>
 
 	</dependencies>

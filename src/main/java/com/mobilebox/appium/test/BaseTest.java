@@ -8,7 +8,6 @@ import org.testng.annotations.Parameters;
 
 import com.mobilebox.appium.driver.Driver;
 import com.mobilebox.appium.screens.HomeScreen;
-
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 

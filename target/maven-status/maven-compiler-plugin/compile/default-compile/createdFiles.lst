@@ -1,0 +1,5 @@
+com/mobilebox/appium/test/BaseTest.class
+com/mobilebox/appium/driver/Driver.class
+com/mobilebox/appium/screens/HomeScreen.class
+com/mobilebox/appium/screens/AbstractScreen.class
+com/mobilebox/appium/screens/AddClock.class

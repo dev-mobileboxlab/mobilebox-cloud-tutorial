@@ -1,4 +1,5 @@
-<suite name="Mobilebox Sandbox Suite" verbose="1" parallel="tests" thread-count="2">
+<suite name="Mobilebox Sandbox Suite" verbose="1" parallel="tests"
+	thread-count="2">
 	<tests>
 		<parameter name="appURL"
 			value="http://mobileboxlab.com/wp-content/uploads/apps/clock-release.apk"></parameter>
@@ -6,14 +7,27 @@
 			<classes>
 				<parameter name="device" value="HT68RBN00481"></parameter>
 				<parameter name="version" value="8.0.0"></parameter>
-				<class name="com.mobilebox.appium.test.AppTests"></class>
+				<class name="com.mobilebox.appium.test.AppTests">
+					<methods>
+						<include name="addOneCity" />
+					</methods>
+
+				</class>
 			</classes>
 		</test>
 		<test name="Test Home Screen Device 2">
 			<classes>
 				<parameter name="device" value="WUD9K17205902284"></parameter>
 				<parameter name="version" value="5.1"></parameter>
-				<class name="com.mobilebox.appium.test.AppTests"></class>
+				<class name="com.mobilebox.appium.test.AppTests">
+					<methods>
+						<include name="addMultipleCitiesAtOnce" />
+					</methods>
+					<methods>
+						<include name="addOneCityAndCancel" />
+					</methods>
+
+				</class>
 			</classes>
 		</test>
 	</tests>

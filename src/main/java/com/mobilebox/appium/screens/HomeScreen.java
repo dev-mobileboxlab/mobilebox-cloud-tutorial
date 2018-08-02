@@ -17,7 +17,7 @@ public class HomeScreen extends AbstractScreen {
 		super(driver);
 	}
 
-	public AddClock coco() {
+	public AddClock tapAddClock() {
 		tap(btnAddClock);
 		return new AddClock(getDriver());
 	}

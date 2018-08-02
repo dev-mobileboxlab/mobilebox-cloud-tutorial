@@ -17,7 +17,7 @@ public class AppTests extends BaseTest {
 	public void addOneCity() throws InterruptedException {
 		String city = "Honolulu";
 		home = getHomeScreen();
-		addClock = home.coco();
+		addClock = home.tapAddClock();
 		addClock.tapByCityName(city);
 		addClock.tapBtnOk();
 		Assert.assertTrue(home.isCityInList(city));
@@ -29,7 +29,7 @@ public class AppTests extends BaseTest {
 		String city2 = "Honolulu";
 		String city3 = "Los Angeles";
 		home = getHomeScreen();
-		addClock = home.coco();
+		addClock = home.tapAddClock();
 		addClock.tapByCityName(city1);
 		addClock.tapByCityName(city2);
 		addClock.tapByCityName(city3);
@@ -43,7 +43,7 @@ public class AppTests extends BaseTest {
 	public void addOneCityAndCancel() throws InterruptedException {
 		String city = "Tijuana";
 		home = getHomeScreen();
-		addClock = home.coco();
+		addClock = home.tapAddClock();
 		addClock.tapByCityName(city);
 		addClock.tapBtnCancel();
 		Assert.assertTrue(!home.isCityInList(city));
